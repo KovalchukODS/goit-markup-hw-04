@@ -2,7 +2,7 @@
 	--Iris: #4D5AE5;
 	--Ocean: #404BBF;
 	--NavyBlue: #2E2F42;
-	--Green: #2E2F42;
+	--Green: #31D0AA;
 	--Slate: #434455;
 	--LightSlate: #8E8F99;
 	--CornFlower: #E7E9FC;
@@ -131,7 +131,6 @@ color: var(--Iris);
 }
 .header-item {
 	color: var(--NavyBlue);
-	transition: color 250ms cubic-bezier(0.4 0 0.2 1);
 }
 .header-link {
 	display: block;
@@ -139,7 +138,7 @@ color: var(--Iris);
 	font-weight: 500;
 	color: var(--NavyBlue);
 
-	transition: color 250ms cubic-bezier(0.4 0 0.2 1);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link.current{
 	position: relative;
@@ -170,7 +169,7 @@ color: var(--Iris);
 	gap: 40px;
 }
 .contacts-item {
-	transition: color 250ms cubic-bezier(0.4 0 0.2 1);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link {
 	display: block;
@@ -218,7 +217,7 @@ color: var(--Iris);
 	letter-spacing: 0.04em;
 	color: var(--White);
 	background-color: var(--Iris);
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover, .hero-button:focus{
 	background-color: var(--Ocean);
@@ -405,4 +404,11 @@ color: var(--Iris);
 
 .socials-icons{
 	gap: 16px;
+}
+.socials-icons .icons-svg{
+	fill: var(--Cloud)
+}
+
+.socials-icons .icons-link:hover, .socials-icons .icons-link:focus{
+	background-color: var(--Green);
 }
